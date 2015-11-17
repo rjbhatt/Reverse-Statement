@@ -1,0 +1,15 @@
+public class project{
+
+private static  String reverse(String text, String reverseStr){
+    if(text == null || text.length() == 0){
+        return reverseStr;
+    }
+    return reverse(text.substring(1), text.charAt(0)+reverseStr);
+}
+public static void main(String [] args){
+    System.out.println(reverse("Rocky", "")); //output is "ykcoR"
+}
+
+}
+//Rakshit (Rocky) Bhatt
+//Copyright 2015
